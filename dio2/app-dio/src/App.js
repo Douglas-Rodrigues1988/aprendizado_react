@@ -4,16 +4,18 @@ import {
   Route,
 } from "react-router-dom";
 
-import { Home } from "./pages/home";
-import { Login } from "./pages/login";
+import { Home } from './pages/home'
+import { Login } from './pages/login'
+import { Feed } from './pages/Feed'
 
 function App() {
   return (
     <Router>
-      <Routes>
+     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-      </Routes>
+        <Route path="/feed" element={<Feed />} />
+     </Routes >
     </Router>
   );
 }
